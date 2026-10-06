@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { MessageCircle, Menu, X, Hammer, TreeDeciduous } from 'lucide-vue-next'
+import { MessageCircle, Menu, X, Gift, Sparkles, MapPin } from 'lucide-vue-next'
 import { getWhatsAppUrl, storeInfo } from '@/config/storeInfo'
 
 const isOpen = ref(false)
@@ -9,15 +9,15 @@ const navLinks = [
   { name: 'Início', href: '#' },
   { name: 'Sobre Nós', href: '#sobre' },
   { name: 'Catálogo', href: '#catalogo' },
+  { name: 'Como Funciona', href: '#como-funciona' },
   { name: 'Depoimentos', href: '#depoimentos' },
-  { name: 'Contato', href: '#contato' },
 ]
 
 const toggleMenu = () => {
   isOpen.value = !isOpen.value
 }
 
-const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre as caixas personalizadas.')
+const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre os presentes especiais da DoceEfeito.')
 </script>
 
 <template>
@@ -27,14 +27,14 @@ const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre as caixas
         <!-- Lado Esquerdo: Logo / Nome da Loja -->
         <a href="#" class="flex items-center gap-3 group">
           <div class="w-11 h-11 rounded-xl bg-brand-primary flex items-center justify-center text-white shadow-md shadow-brand-primary/20 group-hover:bg-brand-primary-hover transition-all duration-300">
-            <Hammer class="w-6 h-6 group-hover:rotate-12 transition-transform duration-300" />
+            <Gift class="w-6 h-6 group-hover:rotate-12 transition-transform duration-300 text-white" />
           </div>
           <div class="flex flex-col">
             <span class="font-serif font-bold text-xl text-brand-dark tracking-tight leading-tight">
               {{ storeInfo.storeName }}
             </span>
             <span class="text-[11px] font-medium text-brand-muted flex items-center gap-1">
-              <TreeDeciduous class="w-3 h-3 text-brand-accent" /> Artesanato em {{ storeInfo.city }}
+              <Sparkles class="w-3 h-3 text-brand-primary" /> Presentes Especiais em {{ storeInfo.city }}
             </span>
           </div>
         </a>
@@ -45,7 +45,7 @@ const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre as caixas
             v-for="link in navLinks"
             :key="link.name"
             :href="link.href"
-            class="px-4 py-2 rounded-xl text-sm font-semibold text-brand-dark hover:text-brand-primary hover:bg-brand-secondary-light/40 transition-all duration-200"
+            class="px-4 py-2 rounded-xl text-sm font-semibold text-brand-dark hover:text-brand-primary hover:bg-brand-secondary-light/60 transition-all duration-200"
           >
             {{ link.name }}
           </a>
@@ -57,7 +57,7 @@ const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre as caixas
             :href="whatsappUrl"
             target="_blank"
             rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold bg-brand-accent text-white hover:bg-brand-accent-hover transition-all duration-200 shadow-md shadow-brand-accent/20 active:scale-95"
+            class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl text-sm font-bold bg-emerald-600 text-white hover:bg-emerald-700 transition-all duration-200 shadow-md shadow-emerald-600/20 active:scale-95"
           >
             <MessageCircle class="w-4 h-4 fill-white" />
             <span>Falar no WhatsApp</span>
@@ -99,7 +99,7 @@ const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de saber mais sobre as caixas
           :href="whatsappUrl"
           target="_blank"
           rel="noopener noreferrer"
-          class="flex items-center justify-center gap-2.5 w-full px-5 py-3 rounded-xl text-sm font-bold bg-brand-accent text-white shadow-md active:scale-95 transition-transform"
+          class="flex items-center justify-center gap-2.5 w-full px-5 py-3 rounded-xl text-sm font-bold bg-emerald-600 text-white shadow-md active:scale-95 transition-transform"
         >
           <MessageCircle class="w-5 h-5 fill-white" />
           <span>Falar no WhatsApp</span>

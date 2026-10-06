@@ -15,31 +15,24 @@ import {
 const steps = [
   {
     step: 'Etapa 1',
-    title: 'Escolha a Peça',
-    description: 'Selecione o modelo no nosso catálogo ou nos envie a sua ideia, foto de referência ou medidas personalizadas.',
+    title: 'Escolha o modelo ou inspiração no catálogo',
+    description: 'Navegue pelas nossas opções de Kits de Batizado, Caixas para Padrinhos, Maternidade, Primeira Bíblia e Eventos.',
     icon: Lightbulb,
     badge: 'Passo 1'
   },
   {
     step: 'Etapa 2',
-    title: 'Personalize os Detalhes',
-    description: 'Defina nomes, datas, frases gravadas a laser, cores de pintura, acabamentos e o tipo de fecho de bronze.',
-    icon: Palette,
+    title: 'Clique em "Consultar Prazo" para falar direto no WhatsApp',
+    description: 'Ao clicar no botão do produto, você é direcionado automaticamente para o nosso atendimento no WhatsApp com o item selecionado.',
+    icon: MessageCircle,
     badge: 'Passo 2'
   },
   {
     step: 'Etapa 3',
-    title: 'Aprovação & Produção',
-    description: 'Montamos a prévia digital para sua validação e produzimos sua caixa artesanalmente com todo o carinho e lixamento fino.',
-    icon: Hammer,
+    title: 'Combine os detalhes e finalize seu pedido',
+    description: 'Defina nomes, monogramas, cores e confirme o prazo de confecção e frete para envio em todo o Brasil e exterior.',
+    icon: Palette,
     badge: 'Passo 3'
-  },
-  {
-    step: 'Etapa 4',
-    title: 'Envio ou Retirada',
-    description: 'Receba em sua casa em embalagem super segura para todo o Brasil ou retire diretamente no nosso ateliê em Marília - SP.',
-    icon: Package,
-    badge: 'Passo 4'
   }
 ]
 
@@ -97,8 +90,8 @@ const reviews = [
           </p>
         </div>
 
-        <!-- Grid de 4 Passos -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative">
+        <!-- Grid de 3 Passos -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative">
           <div
             v-for="(item, index) in steps"
             :key="item.step"

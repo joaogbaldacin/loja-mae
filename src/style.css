@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #A0522D;
-  --color-brand-primary-hover: #8B4513;
-  --color-brand-secondary: #C89D7C;
-  --color-brand-secondary-light: #E8D5C4;
-  --color-brand-bg: #FAF7F2;
+  --color-brand-bg: #FDFBF7;
+  --color-brand-primary: #C5A059;
+  --color-brand-primary-hover: #B08B46;
+  --color-brand-secondary: #E8DFD8;
+  --color-brand-secondary-light: #F5EFEA;
   --color-brand-card: #FFFFFF;
-  --color-brand-dark: #2C1A11;
-  --color-brand-muted: #6E5C54;
-  --color-brand-accent: #6B8E23;
-  --color-brand-accent-hover: #55721B;
+  --color-brand-dark: #332E2B;
+  --color-brand-muted: #6E6660;
+  --color-brand-accent-blue: #8AAEC4;
+  --color-brand-accent-rose: #D8A7B1;
+  --color-brand-accent: #8AAEC4;
+  --color-brand-accent-hover: #759BB3;
+  --color-brand-rose: #D8A7B1;
+  --color-brand-rose-hover: #C694A0;
   --color-brand-whatsapp: #25D366;
   --font-serif: 'Playfair Display', Georgia, serif;
   --font-sans: 'Plus Jakarta Sans', 'Inter', system-ui, sans-serif;
@@ -29,8 +33,8 @@
 /* Custom craftsmanship card & element styling */
 .wood-card {
   background-color: #ffffff;
-  border: 1px solid #E8D5C4;
-  box-shadow: 0 4px 20px -2px rgba(44, 26, 17, 0.05);
+  border: 1px solid #E8DFD8;
+  box-shadow: 0 4px 20px -2px rgba(51, 46, 43, 0.05);
 }
 
 .wood-card-hover {
@@ -38,12 +42,12 @@
 }
 .wood-card-hover:hover {
   transform: translateY(-3px);
-  box-shadow: 0 12px 28px -4px rgba(44, 26, 17, 0.1);
-  border-color: #C89D7C;
+  box-shadow: 0 12px 28px -4px rgba(51, 46, 43, 0.1);
+  border-color: #C5A059;
 }
 
 .wood-glass {
-  background: rgba(250, 247, 242, 0.85);
+  background: rgba(253, 251, 247, 0.88);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
 }
@@ -53,12 +57,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #FAF7F2;
+  background: #FDFBF7;
 }
 ::-webkit-scrollbar-thumb {
-  background: #C89D7C;
+  background: #E8DFD8;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #A0522D;
+  background: #C5A059;
 }

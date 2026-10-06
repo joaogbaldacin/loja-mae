@@ -15,7 +15,7 @@ const folders = [
   {
     path: 'src/components/',
     title: 'Componentes Reutilizáveis',
-    description: 'Contém componentes modulares como Navbar.vue, Footer.vue, FeatureCard.vue, InteractiveCounter.vue e IconShowcase.vue.',
+    description: 'Contém componentes modulares como Navbar.vue, Footer.vue, CatalogSection.vue, Testimonials.vue e AboutSection.vue.',
     badge: 'Modular'
   },
   {

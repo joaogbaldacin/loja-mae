@@ -13,7 +13,6 @@ import {
   Scissors
 } from 'lucide-vue-next'
 import FeatureCard from '@/components/FeatureCard.vue'
-import InteractiveCounter from '@/components/InteractiveCounter.vue'
 import { getWhatsAppUrl } from '@/config/storeInfo'
 
 const features = [
@@ -112,11 +111,6 @@ const whatsappUrl = getWhatsAppUrl('Olá! Gostaria de encomendar uma peça artes
           :tagColor="feat.tagColor"
         />
       </div>
-    </section>
-
-    <!-- Interactive Component Demo Section -->
-    <section>
-      <InteractiveCounter />
     </section>
   </div>
 </template>

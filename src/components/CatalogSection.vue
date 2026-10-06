@@ -85,23 +85,23 @@ const closeModal = () => {
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       
       <!-- Cabeçalho da Seção -->
-      <div class="text-center max-w-3xl mx-auto space-y-4 mb-12">
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-10">
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-primary/15 border border-brand-primary/30 text-brand-dark text-xs font-bold uppercase tracking-wider">
           <Sparkles class="w-3.5 h-3.5 text-brand-primary" />
-          <span>Catálogo DoceEfeito</span>
+          <span>Ateliê DoceEfeito</span>
         </div>
 
         <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-dark tracking-tight">
-          Explore nossos presentes artesanais
+          Gabinete de Inspirações &amp; Peças Personalizadas
         </h2>
 
         <p class="text-sm sm:text-base text-brand-muted leading-relaxed">
-          Cada peça é produzida com dedicação e pode ser personalizada com nomes, monogramas e mensagens gravadas sob medida.
+          Cada criação é concebida com carinho e alma. Navegue por nossas inspirações e solicite a personalização exclusiva do seu momento.
         </p>
       </div>
 
       <!-- Filtros de Categoria (Pills / Abas) -->
-      <div class="flex items-center justify-center gap-2 flex-wrap mb-12">
+      <div class="flex items-center justify-center gap-2 flex-wrap mb-8">
         <button
           v-for="cat in categories"
           :key="cat"
@@ -115,6 +115,12 @@ const closeModal = () => {
         >
           {{ cat }}
         </button>
+      </div>
+
+      <!-- Nota Sutil de Inspiração & Personalização -->
+      <div class="max-w-3xl mx-auto mb-10 p-3.5 rounded-2xl bg-white border border-brand-primary/30 shadow-2xs text-center text-xs sm:text-sm text-brand-dark font-medium flex items-center justify-center gap-2">
+        <Sparkles class="w-4 h-4 text-brand-primary shrink-0" />
+        <span>✨ Cada peça abaixo serve como inspiração. As cores, os bordados e as iniciais serão personalizados exclusivamente para você.</span>
       </div>
 
       <!-- Grid de Produtos -->

@@ -91,8 +91,15 @@ const highlights = [
           <!-- Parágrafos da História de Simone Baldacin -->
           <div class="space-y-4 text-brand-muted text-sm sm:text-base leading-relaxed">
             <p>
-              A <strong>DoceEfeito - Presentes Especiais</strong> é fruto do talento e da paixão de <strong>Simone Baldacin</strong> pelo artesanato fino em Marília/SP. Cada criação carrega sua dedicação em transformar momentos únicos — como batizados, casamentos e a chegada da maternidade — em memórias inesquecíveis.
+              A <strong>DoceEfeito - Presentes Especiais</strong> é fruto do talento e da paixão de <strong>Simone Baldacin</strong> pelo artesanato fino em Marília/SP. Cada criação carrega sua dedicação em transformar momentos únicos em memórias inesquecíveis.
             </p>
+            
+            <!-- Citação em Destaque -->
+            <div class="p-5 rounded-2xl bg-brand-bg border-l-4 border-brand-primary text-brand-dark italic font-serif text-base sm:text-lg leading-snug shadow-2xs my-4">
+              "Não vendemos apenas caixas; criamos as primeiras memórias do batizado do seu afilhado, o convite inesquecível para os seus padrinhos e a lembrança da chegada do seu bebê."
+              <span class="block text-xs font-sans not-italic font-bold text-brand-primary mt-2 uppercase tracking-wider">— Simone Baldacin</span>
+            </div>
+
             <p>
               Com um olhar minucioso para os detalhes, Simone combina tecidos de linho, laços de cetim delicados, bordados personalizados e monogramas gravados sob medida. Da montagem dos kits de batismo ao acabamento das caixas para padrinhos, cada presente é produzido manualmente com extremo afeto e elegância.
             </p>

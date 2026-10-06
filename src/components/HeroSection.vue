@@ -32,22 +32,22 @@ const whatsappUrl = getWhatsAppUrl('Olá! Vim pelo site da DoceEfeito e gostaria
 
           <!-- Título Principal -->
           <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-brand-dark leading-tight tracking-tight">
-            Presentes Especiais Feitos à Mão para <span class="text-brand-primary italic">Momentos Inesquecíveis</span>
+            Presentes afetivos feitos à mão para <span class="text-brand-primary italic">eternizar momentos especiais</span>
           </h1>
 
           <!-- Subtítulo -->
           <p class="text-base sm:text-lg text-brand-muted max-w-2xl leading-relaxed">
-            Ateliê especializado em Kits de Batizado, Caixas para Padrinhos, Maternidade, Primeira Bíblia e Caixas de Madeira Personalizadas.
+            Cada caixa, bíblia e kit de batismo é produzido artesanalmente no nosso ateliê em Marília/SP, cuidando de cada laço e detalhe com todo o carinho.
           </p>
 
           <!-- Botões de Ação -->
           <div class="flex flex-col sm:flex-row items-center gap-4 pt-3 w-full sm:w-auto">
-            <!-- Botão Principal: Ver Catálogo -->
+            <!-- Botão Principal: Conhecer as nossas Peças -->
             <button
               @click="scrollToCatalog"
               class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-primary text-white font-bold text-sm hover:bg-brand-primary-hover transition-all duration-200 shadow-lg shadow-brand-primary/25 hover:-translate-y-0.5 flex items-center justify-center gap-2 group cursor-pointer"
             >
-              <span>Ver Catálogo</span>
+              <span>Conhecer as nossas Peças</span>
               <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
 
@@ -56,10 +56,10 @@ const whatsappUrl = getWhatsAppUrl('Olá! Vim pelo site da DoceEfeito e gostaria
               :href="whatsappUrl"
               target="_blank"
               rel="noopener noreferrer"
-              class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-brand-accent text-white font-bold text-sm hover:bg-brand-accent-hover transition-all duration-200 shadow-lg shadow-brand-accent/20 hover:-translate-y-0.5 flex items-center justify-center gap-2"
+              class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-sm transition-all duration-200 shadow-lg shadow-emerald-600/20 hover:-translate-y-0.5 flex items-center justify-center gap-2"
             >
               <MessageCircle class="w-5 h-5 fill-white" />
-              <span>Encomendar no WhatsApp</span>
+              <span>Falar direto no WhatsApp</span>
             </a>
           </div>
 

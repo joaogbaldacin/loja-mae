@@ -4,22 +4,22 @@ import { storeInfo } from '@/config/storeInfo'
 
 const highlights = [
   {
-    title: 'Feito à Mão sob Medida',
-    description: 'Cada detalhe é cuidadosamente produzido com materiais nobres e acabamento tátil impecável.',
+    title: 'Cuidado Artesanal',
+    description: 'Peças feitas à mão com acabamento impecável, linho delicado e laços finos.',
     icon: Gift,
-    badge: 'Artesanal'
+    badge: 'Feito à Mão'
   },
   {
-    title: 'Personalização Exclusiva',
-    description: 'Nomes, monogramas, datas e mensagens gravadas sob medida para cada cliente.',
+    title: 'Monogramas Exclusivos',
+    description: 'Bordados personalizados e gravações sob medida com os nomes dos homenageados.',
     icon: Palette,
     badge: 'Exclusivo'
   },
   {
-    title: 'Presente Afetivo',
-    description: 'Ideal para marcar batizados, maternidade, convite de padrinhos e momentos especiais.',
+    title: 'Momentos Especiais',
+    description: 'Kits encantadores idealizados para batizados, caixas de padrinhos e maternidade.',
     icon: Heart,
-    badge: 'Com Memória'
+    badge: 'Com Amor'
   }
 ]
 </script>
@@ -32,7 +32,7 @@ const highlights = [
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
         
-        <!-- Coluna Esquerda: Imagem do Ateliê / Processo Produtivo -->
+        <!-- Coluna Esquerda: Imagem do Ateliê / Simone Baldacin -->
         <div class="lg:col-span-5 relative">
           <div class="relative group">
             
@@ -43,7 +43,7 @@ const highlights = [
             <div class="relative wood-card rounded-3xl overflow-hidden shadow-xl border border-brand-secondary/40">
               <img
                 src="/about-workshop.jpg"
-                alt="Processo de confecção artesanal de presentes especiais"
+                alt="Ateliê de Artesanato Simone Baldacin - DoceEfeito"
                 class="w-full h-[380px] sm:h-[460px] object-cover group-hover:scale-105 transition-transform duration-700"
               />
 
@@ -52,12 +52,12 @@ const highlights = [
 
               <!-- Badge sobre a imagem -->
               <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl border border-brand-secondary/40 shadow-lg flex items-center gap-3">
-                <div class="w-10 h-10 rounded-xl bg-brand-primary text-white flex items-center justify-center font-serif font-bold text-lg">
+                <div class="w-10 h-10 rounded-xl bg-brand-primary text-white flex items-center justify-center font-serif font-bold text-lg shadow-sm">
                   <Gift class="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 class="font-serif font-bold text-sm text-brand-dark">Confecção 100% Artesanal</h4>
-                  <p class="text-xs text-brand-muted">Feito com amor e carinho em {{ storeInfo.city }}</p>
+                  <h4 class="font-serif font-bold text-sm text-brand-dark">Ateliê Simone Baldacin</h4>
+                  <p class="text-xs text-brand-muted">Artesanato afetivo e sob medida em {{ storeInfo.city }}</p>
                 </div>
               </div>
             </div>
@@ -66,35 +66,35 @@ const highlights = [
             <div class="hidden sm:flex absolute -top-5 -right-5 bg-brand-dark text-white p-4 rounded-2xl shadow-xl border border-brand-secondary/40 items-center gap-3">
               <Award class="w-8 h-8 text-brand-primary" />
               <div>
-                <span class="block font-serif font-bold text-base text-brand-secondary">Presentes Especiais</span>
-                <span class="text-[11px] text-slate-300">Garantia de Encanto</span>
+                <span class="block font-serif font-bold text-base text-brand-secondary">Carinho &amp; Dedicação</span>
+                <span class="text-[11px] text-slate-300">Tradição em Marília/SP</span>
               </div>
             </div>
 
           </div>
         </div>
 
-        <!-- Coluna Direita: História & Texto -->
+        <!-- Coluna Direita: História de Simone Baldacin & Ateliê -->
         <div class="lg:col-span-7 space-y-6 text-brand-dark">
           
           <!-- Subtítulo em Destaque -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-primary/15 border border-brand-primary/30 text-brand-dark text-xs font-bold uppercase tracking-wider">
             <Sparkles class="w-3.5 h-3.5 text-brand-primary" />
-            <span>Sobre a DoceEfeito</span>
+            <span>Nossa História &amp; Alma Artesanal</span>
           </div>
 
           <!-- Título Marcante -->
           <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-extrabold text-brand-dark leading-tight tracking-tight">
-            Criando presentes e memórias afetivas para <span class="text-brand-primary italic">momentos inesquecíveis</span>.
+            A história por trás do ateliê de artesanato de <span class="text-brand-primary italic">Simone Baldacin</span>
           </h2>
 
-          <!-- Parágrafos de História e Paixão -->
+          <!-- Parágrafos da História de Simone Baldacin -->
           <div class="space-y-4 text-brand-muted text-sm sm:text-base leading-relaxed">
             <p>
-              A <strong>DoceEfeito - Presentes Especiais</strong> nasceu do sonho de transformar momentos marcantes da vida — como batizados, nascimento de bebês, celebrações de padrinhos e bodas — em lembranças tangíveis que emocionam e duram para sempre.
+              A <strong>DoceEfeito - Presentes Especiais</strong> é fruto do talento e da paixão de <strong>Simone Baldacin</strong> pelo artesanato fino em Marília/SP. Cada criação carrega sua dedicação em transformar momentos únicos — como batizados, casamentos e a chegada da maternidade — em memórias inesquecíveis.
             </p>
             <p>
-              Cada kit de batizado, caixa de mdf/madeira personalizada, primeira Bíblia bordada e caixa toilette para eventos é planejado nos mínimos detalhes. Cuidamos das cores, tecidos, laços e gravações personalizadas para que cada presente tenha o efeito doce de um carinho sincero.
+              Com um olhar minucioso para os detalhes, Simone combina tecidos de linho, laços de cetim delicados, bordados personalizados e monogramas gravados sob medida. Da montagem dos kits de batismo ao acabamento das caixas para padrinhos, cada presente é produzido manualmente com extremo afeto e elegância.
             </p>
           </div>
 

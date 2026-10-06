@@ -18,83 +18,43 @@ const categories = [
 const products = [
   {
     id: 1,
-    name: 'Kit Batizado Luxo Espírito Santo',
+    name: 'Kit Batizado Luxo em Mdf e Linho',
     category: 'Kits de Batizado',
-    description: 'Caixa artesanal personalizada com monograma, toalha bordada em renda guipir, vela decorada e mini terço de pérolas.',
+    description: 'Kit artesanal completo em MDF revestido em linho delicado com monograma bordado, toalha com guipir, vela decorada e mini terço de pérolas.',
     price: 'R$ 189,00',
     dimensions: '25x25x10 cm',
     image: '/catalog-wedding.jpg',
-    badge: 'Kit Batizado'
+    badge: 'Mais Pedido'
   },
   {
     id: 2,
-    name: 'Caixa Convite Padrinhos de Batismo & Casamento',
+    name: 'Caixa para Padrinhos de Casamento',
     category: 'Caixas para Padrinhos & Revelação',
-    description: 'Caixa em madeira nobre personalizada com iniciais gravadas a laser, mensagem na tampa interna e berço aveludado.',
+    description: 'Caixa elegante revestida em linho nude com laço de cetim, mensagem de convite na tampa interna e nicho aveludado para lembranças dos padrinhos.',
     price: 'R$ 139,00',
     dimensions: '25x20x10 cm',
     image: '/hero-box.jpg',
-    badge: 'Mais Vendido'
+    badge: 'Exclusivo'
   },
   {
     id: 3,
-    name: 'Caixa Revelação "Você vai ser Vovó / Madrinha"',
-    category: 'Caixas para Padrinhos & Revelação',
-    description: 'Caixa delicada para revelar a gravidez com sapatinho de tricô, frasco com cheirinho e plaquinha gravada em madeira.',
-    price: 'R$ 119,00',
-    dimensions: '20x15x8 cm',
-    image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=800&auto=format&fit=crop',
-    badge: 'Emocionante'
-  },
-  {
-    id: 4,
-    name: 'Primeira Bíblia Sagrada Personalizada',
+    name: 'Primeira Bíblia Infantil Personalizada',
     category: 'Maternidade & Primeira Bíblia',
-    description: 'Bíblia Sagrada revestida em linho nude com gravação dourada do nome da criança. Presente inesquecível para batizado.',
+    description: 'Bíblia Sagrada revestida artesanalmente com linho delicado, bordado personalizado com o nome da criança e detalhes em dourado.',
     price: 'R$ 135,00',
     dimensions: '22x15x4 cm',
     image: 'https://images.unsplash.com/photo-1513519245088-0e12902e5a38?q=80&w=800&auto=format&fit=crop',
     badge: 'Inesquecível'
   },
   {
-    id: 5,
-    name: 'Kit Maternidade & Boas-Vindas do Bebê',
-    category: 'Maternidade & Primeira Bíblia',
-    description: 'Caixa de memórias da maternidade para guardar a pulseirinha do hospital, o umbiguinho e lembranças do nascimento.',
-    price: 'R$ 165,00',
-    dimensions: '30x30x12 cm',
-    image: 'https://images.unsplash.com/photo-1507652313519-d4e9174996dd?q=80&w=800&auto=format&fit=crop',
-    badge: 'Memória'
-  },
-  {
-    id: 6,
-    name: 'Caixa Toilette Casamento & Eventos Luxo',
+    id: 4,
+    name: 'Caixa Toilette para Eventos',
     category: 'Caixas Toilette & Eventos',
-    description: 'Caixa organizadora grande com divisórias sob medida para kit toilette de banheiro em recepções e casamentos.',
+    description: 'Caixa organizadora grande sob medida com divisórias para kit toilette em banheiros de casamentos e festas de 15 anos.',
     price: 'R$ 215,00',
     dimensions: '36x26x14 cm',
     image: 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop',
     badge: 'Eventos'
-  },
-  {
-    id: 7,
-    name: 'Lembrancinha Mini Terço em Caixinha',
-    category: 'Lembrancinhas & Terços',
-    description: 'Mini terço em pérolas acondicionando em caixinha delicada gravada com nome e data. Mínimo de 10 unidades.',
-    price: 'R$ 28,00 / un',
-    dimensions: '8x8x4 cm',
-    image: 'https://images.unsplash.com/photo-1590736704728-f4730bb30770?q=80&w=800&auto=format&fit=crop',
-    badge: 'Lembrancinhas'
-  },
-  {
-    id: 8,
-    name: 'Garrafinha de Água Benta & Marcador',
-    category: 'Lembrancinhas & Terços',
-    description: 'Frasco de vidro decorado com fita de cetim e laço acompanhado de mini oração recortada a laser.',
-    price: 'R$ 35,00 / un',
-    dimensions: 'Frasco 100ml',
-    image: 'https://images.unsplash.com/photo-1528821128474-27f963b072b7?q=80&w=800&auto=format&fit=crop',
-    badge: 'Exclusivo'
   }
 ]
 
@@ -106,7 +66,7 @@ const filteredProducts = computed(() => {
 })
 
 const openWhatsAppOrder = (productName) => {
-  const message = `Olá! Gostaria de consultar o prazo e encomendar a peça: ${productName}.`
+  const message = `Olá! Gostaria de consultar o prazo e a personalização da peça: ${productName}.`
   const url = getWhatsAppUrl(message)
   window.open(url, '_blank')
 }
@@ -228,13 +188,13 @@ const closeModal = () => {
                 </span>
               </div>
 
-              <!-- Botão Principal: Consultar Prazo e Encomendar -->
+              <!-- Botão Principal: Consultar Prazo e Personalização -->
               <button
                 @click="openWhatsAppOrder(product.name)"
                 class="w-full py-3 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold transition-all duration-200 flex items-center justify-center gap-2 shadow-md shadow-emerald-600/20 active:scale-95 cursor-pointer"
               >
                 <MessageCircle class="w-4 h-4 fill-white" />
-                <span>Consultar Prazo e Encomendar</span>
+                <span>Consultar Prazo e Personalização</span>
               </button>
             </div>
 
@@ -316,14 +276,14 @@ const closeModal = () => {
             <span>✨ Produção 100% artesanal e personalizada. Prazo de confecção e envio combinados diretamente via WhatsApp.</span>
           </div>
 
-          <!-- Botão no Modal: Consultar Prazo e Encomendar -->
+          <!-- Botão no Modal: Consultar Prazo e Personalização -->
           <div class="pt-2">
             <button
               @click="openWhatsAppOrder(activeProductModal.name)"
               class="w-full py-3.5 px-5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold transition-all duration-200 flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20 active:scale-95 cursor-pointer"
             >
               <MessageCircle class="w-5 h-5 fill-white" />
-              <span>Consultar Prazo e Encomendar</span>
+              <span>Consultar Prazo e Personalização</span>
             </button>
           </div>
         </div>
